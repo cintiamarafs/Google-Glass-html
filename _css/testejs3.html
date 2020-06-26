@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste JavaScript</title>
+	<meta charset="utf-8"/>
+	<script>
+		function mudalampada (tipo) {
+			if (tipo ==1) {
+				arquivo = "home/cintia/Downloads/curso-html5-pacote01/projeto-glass-html5/_imagens/lampada-acesa.jpg";
+
+			}
+			if (tipo ==2) {
+				arquivo = "home/cintia/Downloads/curso-html5-pacote01/projeto-glass-html5/_imagens/lampada-apagada.jpg";
+			}
+			if (tipo ==3) {
+				arquivo = "home/cintia/Downloads/curso-html5-pacote01/projeto-glass-html5/_imagens/lampada-quebrada.jpg";
+			}
+
+			document.getElementById("luz") .src = arquivo;
+		}
+		
+	</script>
+</head>
+<body>
+	<h1>Acenda a lampada!</h1>
+	<img src= arquivo id="luz" onmousemove="mudalampada()" onmousemove="mudalampada()" onclick="mudalampada()" />
+</body>
+</html>
+ 
